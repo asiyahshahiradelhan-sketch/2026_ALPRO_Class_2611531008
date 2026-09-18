@@ -44,7 +44,7 @@ kode_transaksi_1008 = int(status_valid_1008) << 0 | int(syarat_total_1008) << 1 
 kode_referensi_1008 = int(status_valid_1008) << 0 | int(syarat_total_1008) << 1 | int(promo_valid_1008) << 3
 
 print("\n=== OPERASI BITWISE ===")
-print("=== Kode Status Transaksi ===")
+print(f"=== Kode Status Transaksi ===")
 print(f"{format(int(status_valid_1008) << 0,"04b")} | {format(int(syarat_total_1008) << 1,"04b")} | {format(int(syarat_jumlah_1008) << 2,"04b")} | {format(int(promo_valid_1008) << 3,"04b")}")
 print(f"Kode Biner   : {format(kode_transaksi_1008,"04b")}")
 print(f"Kode Desimal : {kode_transaksi_1008}")
